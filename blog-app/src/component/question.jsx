@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { NavLink } from "react-router-dom";
 export default class Question extends Component{
     constructor(props){
         super()
@@ -82,7 +83,14 @@ localStorage.setItem("count",JSON.stringify(0))
     render(){
         let {quesCount ,data} = this.state
     return(
-        <>{
+        <main className="container">
+        <header>
+        <h1>QUIZ APP</h1>
+        
+        <NavLink className="home-btn" to="/">Take This Quiz</NavLink>
+       
+        </header>
+        {
            
         quesCount<10?
         <main className="ques-container">
@@ -100,7 +108,9 @@ localStorage.setItem("count",JSON.stringify(0))
         )}
         </ul>
        <h4 className={this.state.error?"active":""}>Select an answer to go forward!</h4>
+       <div className="flex-left">
         <button onClick={()=>this.handleNext()}>Next</button>
+        </div>
         </section>
         </main>
         :
@@ -142,7 +152,7 @@ localStorage.setItem("count",JSON.stringify(0))
          </section>
         }
        
-        </>
+        </main>
     )
     }
 }

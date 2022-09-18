@@ -254,3 +254,19 @@ text-align: center;
     border-radius: 50%;
     color: rgba(0, 0, 0,0.7);
 }
+.home-btn{
+    border: 2px solid rgb(22,78,165);
+    color:rgb(22,78,165);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    border-radius: 3px;
+}
+.home-btn:hover{
+    background-color: rgb(22,78,165);
+    color: white;
+}
+.flex-left{
+    display: flex;
+    justify-content: flex-end;
+}
