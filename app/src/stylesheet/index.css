@@ -79,6 +79,7 @@ header{
     margin: 10px;
     background-color: rgb(227,79,38);
    font-variant: small-caps;
+   cursor: pointer;
 }
 .quiz-btn .all{
     background-color: rgb(254,214,2);
